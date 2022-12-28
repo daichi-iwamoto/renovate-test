@@ -2,6 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "dependencyDashboard": true,
   "extends": ["config:base", ":timezone(Asia/Tokyo)"],
+  "labels": ["dependencies"],
   "packageRules": [
     {
       // majorアップデートはレビュアーを2人に設定
@@ -10,7 +11,7 @@
       "matchUpdateTypes": ["major"],
       "reviewers": ["daichi-iwamoto"],
       "reviewersSampleSize": 2,
-      "labels": ["dependencies", "major"]
+      "addLabels": ["major"]
     }
     // {
     //   // minorアップデートはレビュアーを1人に設定
