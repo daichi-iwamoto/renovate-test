@@ -1,18 +1,15 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "dependencyDashboard": true,
-  "extends": ["config:base", ":timezone(Asia/Tokyo)"],
   "reviewers": ["daichi-iwamoto", "hiromu-koizumi", "Rei_t"],
   "reviewersSampleSize": 2,
-  "labels": ["dependencies"],
+  "dependencyDashboard": true,
+  "extends": ["config:base", ":timezone(Asia/Tokyo)"],
   "packageRules": [
     {
-      // minor以下のアップデートはautomaerge
       "automerge": true,
       "groupName": "minorDependencies",
       "matchDepTypes": ["dependencies", "devDependencies"],
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "labels": ["dependencies", "patch"]
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"]
     }
   ],
   "platformAutomerge": true
