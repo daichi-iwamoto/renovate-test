@@ -7,19 +7,11 @@
   "labels": ["dependencies"],
   "packageRules": [
     {
-      // minorアップデートはレビュアーを1人に設定
+      // minor以下のアップデートはautomaerge
+      "automerge": true,
       "groupName": "minorDependencies",
       "matchDepTypes": ["dependencies", "devDependencies"],
-      "matchUpdateTypes": ["minor"],
-      "reviewersSampleSize": 1,
-      "labels": ["dependencies", "minor"]
-    },
-    {
-      // patch以下のアップデートはautomaerge
-      "automerge": true,
-      "groupName": "patchDependencies",
-      "matchDepTypes": ["dependencies", "devDependencies"],
-      "matchUpdateTypes": ["patch", "pin", "digest"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "labels": ["dependencies", "patch"]
     }
   ],
