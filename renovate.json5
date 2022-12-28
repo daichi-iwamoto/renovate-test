@@ -11,24 +11,24 @@
       "reviewers": ["daichi-iwamoto"],
       "reviewersSampleSize": 2,
       "labels": ["dependencies", "major"]
-    },
-    {
-      // minorアップデートはレビュアーを1人に設定
-      "groupName": "minorDependencies",
-      "matchDepTypes": ["dependencies", "devDependencies"],
-      "matchUpdateTypes": ["minor"],
-      "reviewers": ["daichi-iwamoto"],
-      "reviewersSampleSize": 1,
-      "labels": ["dependencies", "minor"]
-    },
-    {
-      // patch以下のアップデートはautomaerge
-      "automerge": true,
-      "groupName": "patchDependencies",
-      "matchDepTypes": ["dependencies", "devDependencies"],
-      "matchUpdateTypes": ["patch", "pin", "digest"],
-      "labels": ["dependencies", "patch"]
     }
+    // {
+    //   // minorアップデートはレビュアーを1人に設定
+    //   "groupName": "minorDependencies",
+    //   "matchDepTypes": ["dependencies", "devDependencies"],
+    //   "matchUpdateTypes": ["minor"],
+    //   "reviewers": ["daichi-iwamoto"],
+    //   "reviewersSampleSize": 1,
+    //   "labels": ["dependencies", "minor"]
+    // },
+    // {
+    //   // patch以下のアップデートはautomaerge
+    //   "automerge": true,
+    //   "groupName": "patchDependencies",
+    //   "matchDepTypes": ["dependencies", "devDependencies"],
+    //   "matchUpdateTypes": ["patch", "pin", "digest"],
+    //   "labels": ["dependencies", "patch"]
+    // }
   ],
   "platformAutomerge": true
 }
