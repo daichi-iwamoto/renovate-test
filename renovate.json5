@@ -3,15 +3,9 @@
   "dependencyDashboard": true,
   "extends": ["config:base", ":timezone(Asia/Tokyo)"],
   "reviewers": ["daichi-iwamoto", "netooo", "T-unity"],
+  "reviewersSampleSize": 2,
+  "labels": ["dependencies"],
   "packageRules": [
-    {
-      // majorアップデートはレビュアーを2人に設定
-      "groupName": "majorDependencies",
-      "matchDepTypes": ["dependencies", "devDependencies"],
-      "matchUpdateTypes": ["major"],
-      "reviewersSampleSize": 2,
-      "labels": ["dependencies", "major"],
-    },
     {
       // minorアップデートはレビュアーを1人に設定
       "groupName": "minorDependencies",
