@@ -2,7 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "dependencyDashboard": true,
   "extends": ["config:base", ":timezone(Asia/Tokyo)"],
-  "reviewers": ["daichi-iwamoto", "netooo", "T-unity"],
+  "reviewers": ["daichi-iwamoto", "hiromu-koizumi", "Rei_t"],
   "reviewersSampleSize": 2,
   "labels": ["dependencies"],
   "packageRules": [
