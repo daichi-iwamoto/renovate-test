@@ -23,5 +23,6 @@
       "labels": ["dependencies", "patch"]
     }
   ],
-  "platformAutomerge": true
+  "platformAutomerge": true,
+  "schedule": ["before 7:00 on Thursday"]
 }
