@@ -10,7 +10,7 @@
       "matchDepTypes": ["dependencies", "devDependencies"],
       "matchUpdateTypes": ["major"],
       "reviewers": ["daichi-iwamoto"],
-      // "reviewersSampleSize": 2,
+      "reviewersSampleSize": 2,
       "addLabels": ["major"]
     }
     // {
