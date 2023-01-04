@@ -4,11 +4,11 @@
   "reviewersSampleSize": 2,
   "dependencyDashboard": true,
   "extends": ["config:base", ":timezone(Asia/Tokyo)"],
+  "labels": ["dependencies"],
   "packageRules": [
     {
       "automerge": true,
       "groupName": "minorDependencies",
-      "matchDepTypes": ["dependencies", "devDependencies"],
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"]
     }
   ],
